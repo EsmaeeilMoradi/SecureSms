@@ -35,7 +35,7 @@ class SmsManagerService : Service(), ISmsReceivedListener {
     override fun onCreate() {
         super.onCreate()
         smsManager = SmsManager(this)
-        smsRepository = SmsRepository(smsManager)
+//        smsRepository = SmsRepository(smsManager)
         binder = SmsManagerBinder(smsRepository)
         
         // Set SMS received listener
